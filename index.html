@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #my-id {
+            width: 50px; 
+            height: 50px; 
+            background-color: coral;
+        }
+        section.my-class div ul li.active{
+            background-color: blue;
+        }
+        .my-class {
+            margin: 30px;
+            padding: 30px;
+            background-color: cornflowerblue;
+        }
+        
+        section.my-class div ul li{
+            height: 20px;
+            background-color: crimson;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+          }
+          
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>Vive karim benzema</h1>
+
+    <button id="Expresso">Expresso</button>
+    <button id="Cofe">cofe</button>
+    <button id="Chocolate">Chocolate</button>
+    <button id="The">Thé</button>
+    <button id="Soupe">Soupe</button>
+    
+
+    <h4 id="total"></h4>
+    <h4 id="sold"></h4>
+    <hr>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Editer</th>
+            <th>Supprimer</th>
+        </tr>
+    </table>
+    <br>
+    <form method="get" action="">
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="my-input-name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email : </label>
+            <input type="text" id="email" name="my-input-email">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Envoyer">
+        </div>
+    </form>
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+    <script src="test2.js"></script>
+    <script src="test.js"></script>
+    
+</body>
+</html>
