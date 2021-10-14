@@ -1,7 +1,7 @@
 let persons;
 
 let getRemotePersons = async () => {
-    fetch('/persons.json')
+    fetch('persons.json')
         .then(async (response) => {
             await response.json().then(remotePersons => {
                 localStorage.setItem('persons', JSON.stringify(remotePersons));
@@ -60,9 +60,9 @@ let persist = () => {
     localStorage.setItem('persons', JSON.stringify(persons));
 }
 
+
 let deleteItem = (id) => {
     persons = persons.filter(person => person.index !== id)
-
     persist();
     render();
 }
@@ -77,6 +77,7 @@ let editItem = (id) => {
     $('form').append(`<input type="hidden" value="${person.index}">`);
 
     persist();
+
 }
 
 
@@ -128,3 +129,13 @@ $.get(API_URL)
                 })
         })
     })
+
+let handleStatusChange = () => {
+    console.log("Online : " + navigator.onLine);
+
+    $('.flash').text(navigator.onLine ? 'Connecté' : "Déconnecté")
+}
+
+window.addEventListener('online', handleStatusChange);
+window.addEventListener('offline', handleStatusChange);
+

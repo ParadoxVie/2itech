@@ -1,64 +1,40 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-</head>
-<body>
-    <h1>Karim Benzema Ballon d'Or</h1>
-    <!-- 
-    <div id="my-id"></div>
-    <section class="my-class">
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </section>
-    <section class="my-class">
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </section>
-    -->
-    <table>
-        <tr>
-            <th>id</th>
-            <th>Nom</th>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javascript OOP</title>
+    <style>
+      .error {
+        background: firebrick;
+      }
+      .success {
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
             <th>Email</th>
-            <th>Editer</th>
-            <th>Supprimer</th>
-        </tr>
-    </table>
-    <br>
-    <form method="get" action="">
-        <div>
-            <label for="name">Name : </label>
-            <input type="text" id="name" name="my-input-name">
-        </div>
-        <br>
-        <div>
-            <label for="email">Email : </label>
-            <input type="text" id="email" name="my-input-email">
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="Envoyer">
-        </div>
-    </form>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- @todo récupérer le formulaire depuis une API -->
+    <!-- Envoyer les données du formulaire sur l'API -->
+    <!-- Si tout s'est bien passé, afficher un message avant le formulaire -->
+    <!-- Sinon on mets le background du formulaire en rouge -->
+    <!-- https://2i-js.iknsa.xyz/create-user.php -->
+    <div class="form"></div>
+
     <script src="jquery.js"></script>
     <script src="test2.js"></script>
-</body>
+  </body>
 </html>

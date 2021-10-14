@@ -1,0 +1,85 @@
+div.content{
+    display: flex;
+}
+
+div.machine{
+
+    width : 60%;
+    margin: auto;
+
+    background-image: url(img/karimgigi.jpg);
+    background-repeat:no-repeat;
+    background-position:left top;
+}
+
+div.title{
+    display: flex;
+    width:50%;
+    margin: auto;
+}
+
+div.machine div.title img{
+    width: 30%;
+    float: left;
+}
+
+div#stockage{
+    display: flex;
+    width: max-content;
+    margin: auto;
+}
+
+div#stockage p{
+    margin-left: 1em;
+}
+
+div.double{
+    display: flex;
+    width: max-content;
+    margin: auto;
+    margin-top: 5em;
+}
+
+div.double img{
+    width: 100px;
+    height: 100px;
+}
+
+div.double #cofe{
+    margin-left: 10em;
+}
+
+div.doubledeux{
+    
+    display: flex;
+    width: max-content;
+    margin: auto;
+    margin-top: 10em;
+}
+
+div.doubledeux img{
+    width: 100px;
+    height: 100px;
+}
+div.doubledeux #capu{
+    margin-left: 10em;
+}
+
+div#footer{
+    display: flex;
+    width: max-content;
+    margin: auto;
+}
+
+div#footer p{
+    margin-left: 4em;
+}
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+img.gif{
+    opacity: 0;
+    float: right;
+}

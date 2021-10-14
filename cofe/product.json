@@ -1,0 +1,30 @@
+{
+    "products" :{
+
+        "id-1":{
+            "name": "Expresso",
+            "price": 1.5,
+            "content": [{"coffe" : 1}]
+        },
+        "id-2":{
+            "name": "Café au lait",
+            "price": 2,
+            "content": [{"coffe" : 1}, {"milk": 0.2}]
+        },
+        "id-3":{
+            "name": "Chocolat",
+            "price": 2,
+            "content": [{"chocolate" : 1}, {"milk": 0.6}]
+        },
+        "id-4":{
+            "name": "Cappuccino",
+            "price": 2,
+            "content": [{"chocolate" : 0.4}, {"milk": 0.6}, {"coffe": 0.8}]
+        }
+    },
+    "stock": {
+        "coffee": 150,
+        "chocolate": 80,
+        "milk": 80
+    }
+}
